@@ -41,10 +41,37 @@ function toggleMenu(){
 
 }
 
-window.onload = function(){
+const hiddenElements = document.querySelectorAll("section");
 
-document.getElementById("loader")
-.style.display = "none";
+const observer = new IntersectionObserver((entries)=>{
 
-}
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+});
+
+hiddenElements.forEach((el)=>{
+
+    el.classList.add("hidden");
+
+    observer.observe(el);
+
+});
+
+window.addEventListener("scroll",()=>{
+
+let totalHeight=document.documentElement.scrollHeight-window.innerHeight;
+
+let progress=(window.pageYOffset/totalHeight)*100;
+
+document.getElementById("progressBar").style.width=progress+"%";
+
+});
 

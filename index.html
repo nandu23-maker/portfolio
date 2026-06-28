@@ -10,17 +10,14 @@
 
 <body>
 
+    
     <nav>
 
-        <div id="loader">
-    Loading Portfolio...
-</div>
+        <div class="logo">
+        NR
+        </div>
 
-    <div class="menu-icon" onclick="toggleMenu()">
-        ☰
-    </div>
-
-    <ul id="menu">
+       <ul>
 
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -35,43 +32,83 @@
 </nav>
 
     <section id="home">
-        
-        <img src="profile.jpg" alt="Profile" width="200">
+
+    <div class="home-content">
+
+        <h3>Hello, I'm</h3>
 
         <h1>Nandini Raut</h1>
 
-        <h3 id="typing"></h3>
+        <h2 id="typing"></h2>
 
-        <a href="resume.pdf" download>
-            <button>Download Resume</button>
-        </a>
+        <p>
+            Computer Science Engineering Graduate | C/C++ | Networking | Data Analytics | Linux | Windows | AWS EC2 | Entry-Level Software & IT Professional
+        </p>
 
-    </section>
+        <div class="home-buttons">
 
+            <a href="resume.pdf" download>
+                <button class="btn1">Download Resume</button>
+            </a>
+
+            <a href="#contact">
+                <button class="btn2">Hire Me</button>
+            </a>
+
+        </div>
+
+    </div>
+
+    
+
+    <div class="home-image">
+
+        <img src="profile.jpg" alt="Nandini">
+
+    </div>
+
+</section>
     <section id="about">
         <h2>About Me</h2>
 
-        <p>Computer Science Engineering student at GH Raisoni University, Amravati,Skilled in C/C++,networking, and data analytics,with experience in Linux,Windows,and AWS EC2.</p>
+        <p>Computer Science Engineering graduate from GH Raisoni University, Amravati, with strong skills in C/C++, Networking, Data Analytics, Linux, Windows, and AWS EC2. Experienced in software development, system administration, and problem-solving through academic projects and industry internship experience. Passionate about learning new technologies, analyzing data, and building efficient technical solutions. Seeking an entry-level opportunity to apply technical expertise, contribute to organizational growth, and develop a successful career in the IT industry.</p>   
+
 
     </section>
 
     <section id="education">
-        <h2>Education</h2>
 
-        <p>
-            B.Tech Computer Science Engineering
-        </p>
+    <h2>Education</h2>
 
-        <p>
-            GH Raisoni University,Amravati
-        </p>
+    <div class="timeline">
 
-        <p>
-            2022-2026
-        </p>
+        <!-- B.Tech -->
+        <div class="timeline-item">
+            <h3>B.Tech in Computer Science Engineering</h3>
+            <h4>GH Raisoni University, Amravati</h4>
+            <span>2022 – 2026</span>
+            <p><strong>CGPA:</strong> 7.05</p>
+        </div>
 
-        <p>CGPA: 7.05</p>
-    </section>
+        <!-- 12th -->
+        <div class="timeline-item">
+            <h3>Higher Secondary (12th)</h3>
+            <h4>R.R Lahoti College, Morshi</h4>
+            <span>2021 – 2022</span>
+            <p><strong>Percentage:</strong> 76.17%</p>
+        </div>
+
+        <!-- 10th -->
+        <div class="timeline-item">
+            <h3>Secondary School (10th)</h3>
+            <h4>ShantiNiketan English School,Morshi</h4>
+            <span>2019 – 2020</span>
+            <p><strong>Percentage:</strong> 86.40%</p>
+        </div>
+
+    </div>
+
+</section>
 
     <section id="skills">
         <h2>Skills</h2>
@@ -79,12 +116,17 @@
        
         <div class="skills">
 
-<span>C++</span>
+<span>C/C++</span>
 <span>Python</span>
 <span>Networking</span>
+<span>Operating System</span>
 <span>AWS EC2</span>
 <span>Linux</span>
 <span>HTML</span>
+<span>REST APIs</span>
+<span>Tcpdump</span>
+<span>Wireshark</span>
+<span>Socket Programming</span>
 
 </div>
 
@@ -108,11 +150,16 @@
         </p>
 
         <ul>
-            <li>Worked with C and C++ programming.</li>
-            <li>Learned Networking concepts and troubleshooting.</li>
-            <li>Worked on Linux and Windows operating systems.</li>
-            <li>Explored REST APIs and API integration.</li>
-            <li>Participated in software testing and debugging.</li>
+            <li>Built TCP client-server applications using C/C++ socket programming</li>
+            <li>Applied TCP/IP networking concepts including handshake, sequence numbers, and ACK
+mechanisms.</li>
+            <li>Analyzed and troubleshot network traffic using Wireshark and tcpdump.</li>
+            <li>Worked in Linux (Ubuntu), Windows, and AWS EC2 environments.</li>
+            <li>Developed and tested system-level and network-based applications using C/C++.</li>
+            <li>Worked with REST APIs for application integration and communication.</li>
+            <li>Participated in software development, debugging, testing, and maintenance activities.
+</li>
+<li>Collaborated with team members following SDLC best practices.</li>
         </ul>
 
     </div>
@@ -122,22 +169,48 @@
     <section id="projects">
         <h2>Projects</h2> 
         
-        <div class="card">
-            <h3>Face Liveness Detection System</h3>
-            <p>Developed a Face Liveness Detection system using python,OpenCV and Dlib</p>
-
-        </div>
+       
 
         <div class="card">
             <h3>Indian Sign Language Translator</h3>
             <ul>
-            <li>Tools&Tech Python,OpenCV,MediaPipe,Flask,Tensorflow</li>
-            <li>Developed a real-time Indian Sign Language Translator using computer vision and machine learning techniques</li>
-            <li>Hand gestures recognition with MediaPipe,trained model for ISL alphabets/words</li>
-            <li>Flask-based web app for live translation,enhancing accessibility</li>
-
+            <li>Tools & Technologies: Python, OpenCV, MediaPipe, TensorFlow, Flask</li>
+            <li>Developed a real-time Indian Sign Language (ISL) to text translation system using computer vision
+and deep learning techniques.</li>
+            <li>Implemented hand gesture detection and tracking using MediaPipe and OpenCV.</li>
+            <li>Trained and integrated a machine learning model to recognize ISL alphabets and words with high
+accuracy.</li>
+<li>Built a Flask-based web application for live gesture-to-text translation</li>
+<li>Enhanced accessibility and communication for individuals with hearing and speech impairments
+through real-time sign language interpretation.</li>
+<li>Optimized model performance for efficient real-time recognition and user interaction</li>
+<li>Key Skills: Python, OpenCV, MediaPipe, TensorFlow, Flask, Computer Vision, Deep Learning, Machine
+Learning, Gesture Recognition, Web Development.</li>
             </ul>
         </div>
+
+        <div class="card">
+    <h3>Personal Portfolio Website</h3>
+
+    <p>
+        A fully responsive portfolio website developed to showcase my
+        skills, education, internship experience, certifications, and
+        projects with a modern and interactive user interface.
+    </p>
+
+    <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript</p>
+
+    <p><strong>Features:</strong></p>
+
+    <ul>
+        <li>Responsive Design</li>
+        <li>Smooth Scrolling</li>
+        <li>Typing Animation</li>
+        <li>Project Showcase</li>
+        <li>Modern UI/UX</li>
+        <li>Interactive Navigation</li>
+    </ul>
+</div>
     </section>
 
     
@@ -161,15 +234,36 @@
             LinkedIn Profile
         </a>
     </p>
+
+    <div class="social-icons">
+
+<a href="https://github.com/nandu23-maker" target="_blank">🐱</a>
+
+<a href="https://linkedin.com/in/miss-nandini-raut-499b1834b" target="_blank">💼</a>
+
+<a href="mailto:rautnandini21@gmail.com">📧</a>
+
+</div>
 </section>
 
 <button id="topBtn" onclick="topFunction()">
     ↑
 </button>
+<footer>
+
+<h3>Nandini Raut</h3>
+
+<p>Computer Science Engineer | Software Developer</p>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
 
       <script src="script.js"></script>
 
 </body>
+
+<div id="progressBar"></div>
 
 
 
